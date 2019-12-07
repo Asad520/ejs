@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body {
+        background: darkcyan;
+        font-family: verdana;
+        text-align: center;
+        font-size: 3em;
+        color: wheat;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+      
+    <h1>HELLO! WELCOME TO THE PROFILE OF <%= person %></h1>
+    
+    <strong><p>AGE: </strong><%= data.age %></p>
+    <strong><p>JOB:</strong> <%= data.job %></p>
+    <ul>
+      <% data.hobbies.forEach((hobby)=>{%>
+        <li><%=hobby%></li>
+      <%});%>
+    </ul>
+    <h2>I HOPE YOU'll ENJOY YOUR STAY!!!</h2>
+    <p>I'M GONNA DIE SOON</p>
+    <p style="color:brown">HA HA HA</p>
+  </body>
+</html>
